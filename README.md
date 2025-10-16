@@ -1,15 +1,15 @@
 # ESP32-S2 Wireless Computer Remote Controller
 
-## Screenshots
+## 🖥️ User Interface Preview
 
-**Main Control Interface (Light Mode)**
-![Main Interface](Screenshot%202025-10-16%20182645.png)
+**Main Control Interface (Light Mode)**  
+![Main Interface](Images/Screenshot%202025-10-16%20182645.png)
 
-**Main Control Interface (Dark Mode)**
-![Action Buttons](Screenshot%202025-10-16%20182705.png)
+**Main Control Interface (Dark Mode)**  
+![Action Buttons](Images/Screenshot%202025-10-16%20182705.png)
 
-**Power Controls**
-![Connected Web UI](Screenshot%202025-10-16%20182726.png)
+**Power Controls**  
+![Connected Web UI](Images/Screenshot%202025-10-16%20182726.png)
 
 **Created by:** Jaša Petek  
 **Hackster.io:** [https://www.hackster.io/petekjasa](https://www.hackster.io/petekjasa)  
