@@ -10,7 +10,7 @@
 
 This project allows you to control your PC remotely using your phone via WiFi. The ESP32-S2 acts as a wireless USB HID device, providing seamless computer control through a modern web interface.
 
-[![Demo Video](https://vimeo.com/1127934041?share=copy&fl=sv&fe=ci)
+🎥[Demo Video](https://vimeo.com/1127934041?share=copy&fl=sv&fe=ci)
 
 ### Features
 
