@@ -81,7 +81,38 @@ This project allows you to control your PC remotely using your phone via WiFi. T
 - **System Actions** - Quick access to Task Manager, Run Dialog, Show Desktop
 - **Theme Toggle** - Switch between dark and light mode (located in header)
 
-⚠️ **Note:** Wake-up functionality is experimental and may not work on all PCs. Screenshot functionality has been temporarily removed and will be re-added in future updates.
+⚠️ **Note:** Wake-up functionality is experimental and may not work on all PCs.
+
+📸 **Screenshot setup:** — create a private Discord channel + webhook
+
+1. In Discord, create a new text channel:
+
+   * Click the server name → **Create Channel** → choose **Text Channel**.
+   * Toggle **Private Channel** ON.
+   * Add only the users/roles you want to allow (this keeps the webhook private).
+
+2. Open the channel you just created, then go to **Server Settings > Integrations > Webhooks**.
+
+   * Click **New Webhook** (or **Create Webhook**).
+   * Select the **private channel** you created as the webhook’s target.
+
+3. Name the webhook (optional), then click **Copy Webhook URL**.
+
+   * The URL looks like: `https://discord.com/api/webhooks/<WEBHOOK_ID>/<WEBHOOK_TOKEN>`
+
+4. Paste that exact URL into the code at the `YOUR WEBHOOK HERE` spot.
+
+   * Save and upload the `.ino`.
+   * Test the upload manually in PowerShell first if you want to confirm it works before using the Arduino automation.
+
+**Security notes**
+
+* Keep the webhook URL secret. If leaked, anyone can post to that channel — regenerate it if needed.
+* Using a private channel limits visibility and reduces abuse risk.
+
+Why discord?
+
+I use a Discord webhook to receive screenshots from the ESP32-S2 directly in a private channel. This makes it super easy to see captures instantly, without setting up email, cloud storage, or any server. Using a private channel keeps your screenshots secure, and you can access them from any device with Discord. I do not see your screenshots. You control the webhook, and only you (and anyone you give access to the webhook or private channel) can view the images.
 
 ## WiFi Network Configuration
 
@@ -138,7 +169,6 @@ Please credit Jaša Petek if you reference or use this project.
 
 ## Future Updates
 
-- [ ] Screenshot download functionality
 - [ ] Additional macros and system commands
 - [ ] Improved Wake PC from sleep reliability
 
